@@ -7,9 +7,9 @@ const app = express();
 
 connect();
 
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 app.use('/user', UserRouter);
 
 app.get("/", (_req: Request, res: Response) => {
