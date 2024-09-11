@@ -13,8 +13,10 @@ const schema = new Schema({
   password: {
     type: String,
     required: true,
+    select: false,
   },
-  picture: String,
+  profilePic: String,
+  location: String,
 
   posts: [
     {
@@ -67,13 +69,10 @@ const schema = new Schema({
         type: Date,
         required: true,
       },
-      endDate: {
-        type: Date,
-        requied: true,
-      },
+      endDate: Date,
       description: String,
     },
   ],
 });
 
-export default model('users', schema);
+export default model("users", schema);
