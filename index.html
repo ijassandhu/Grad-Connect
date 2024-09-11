@@ -14,7 +14,7 @@
     <meta property="fb:app_id" content="263794810302279" />
     <meta name="environment" content="production" />
 
-    <title>AlmaConnect | Build and leverage your alumni community</title>
+    <title>GradConnect | Build and leverage your alumni community</title>
     <meta name="title" content="AlmaConnect | Build and leverage your alumni community" />
     <meta name="title" property="og:title" content="AlmaConnect | Build and leverage your alumni community" />
 
@@ -167,863 +167,448 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="body  white_body">
 
 
-    <div class="js_website_landing landingus" ng-controller="MainController" ng-cloak>
 
-        <div style="width:100%;position: relative;background: rgb(243,244,245);">
-            <div style="background: #4C0EF8;">
-                <div style="max-width: 1184px;margin: auto;height: 80px;padding: 0px 24px;">
-                    <a href="https://www.almaconnect.com" style="float: left;height: 100%;" class="hide_below_560">
-                        <div class="vertical_middle"></div>
-                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/alma_logo_white-4d804fdf874259d1a08cc3af78e02bf8c55828dc1fe42acb43822fd3cf989335.png"
-                            alt="alma logo white"
-                            style="max-width:51px;display: inline-block;vertical-align: middle;" />
-                        <div class="text_title"
-                            style="font-size: 20px;display: inline-block;vertical-align: middle;padding-left: 16px;color: #fff;">
-                            Aluminati
-                        </div>
-                    </a>
-                    <a href="https://www.almaconnect.com" style="float: left;height: 100%;" class="hide_above_560">
-                        <div class="vertical_middle"></div>
-                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/alma_logo_white-4d804fdf874259d1a08cc3af78e02bf8c55828dc1fe42acb43822fd3cf989335.png"
-                            alt="alma logo white"
-                            style="max-width:40px;display: inline-block;vertical-align: middle;" />
-                        <div class="text_title"
-                            style="display: inline-block;vertical-align: middle;padding-left: 16px;color: #fff;">
-                            Aluminati
-                        </div>
-                    </a>
-                    <div style="float: right;height: 100%;">
-                        <div class="vertical_middle"></div>
-                        <div style="display:inline-block;vertical-align:middle;">
-                            <div class="hide_below_560">
-                                <div style="padding-right: 40px;display: inline-block;">
-                                    <div ng-mouseover="product_dropdown.showDropdown()" style="display: flex;">
-                                        <div class="text_body_light"
-                                            style="font-size: 16px;cursor: pointer;color: #fff;">Products</div>
-                                        <i class="icon-7"
-                                            style="font-size: 20px;vertical-align: middle;padding-left: 8px;color: #fff;"></i>
-                                    </div>
-                                    <div ac-dropdown="product_dropdown"
-                                        style="width: 270px;position: absolute;top: 30px;right: 0px;">
-                                        <div class="dd_item">
-                                            <a href="/alumni/news/" class="text_body_light">Prospects & Alumni in
-                                                News</a>
-                                        </div>
-                                        <div class="dd_item">
-                                            <a href="https://news.almaconnect.com/data_mine" crossorigin="anonymous"
-                                                class="text_body_light">Essential Alumni and Donor Data</a>
-                                        </div>
-                                        <div class="dd_item">
-                                            <a href="/for-institutions" class="text_body_light">Alumni Network For
-                                                Institutions</a>
-                                        </div>
-                                        <div class="dd_item">
-                                            <a href="/for-companies" class="text_body_light">Alumni Network For
-                                                Corporates</a>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <a href="/clients" class="text_body_light"
-                                    style="font-size: 16px;padding-right: 40px;color: #fff;">Clients</a>
-                            </div>
-                        </div>
-                        <div style="display: inline-block;vertical-align:middle;">
-                            <div ng-custom-if="!(currentUser.id)">
-                                <a href="/signup" class="ac_button_small hide_below_560">
-                                    Login / Signup
-                                </a>
-                                <a href="/signup" class="text_link hide_above_560">
-                                    Login / Signup
-                                </a>
-                            </div>
+</html>
+<div class="js_website_landing landingus" ng-controller="MainController" ng-cloak>
 
-                            <div ng-custom-if="currentUser.id">
-                                <div ng-click="dropdown.showDropdown()" style="cursor: pointer;">
-                                    <img ng-src="{{$root.url(currentUser.image, {size: '100x100', type: 'crop'})}}"
-                                        alt="user image"
-                                        style="max-width: 32px;border-radius: 16px;vertical-align: middle;border: 2px solid #fff;" />
+    <div style="width:100%;position: relative;background: #915a5a;">
+        <div style="background: #343232;">
+            <div style="max-width: 1184px;margin: auto;height: 80px;padding: 0px 24px;">
+                <a href="https://www.almaconnect.com" style="float: left;height: 100%;" class="hide_below_560">
+                    <div class="vertical_middle"></div>
+                    <img src="images/header logo.svg" alt="alma logo white"
+                        style="max-width:51px;display: inline-block;vertical-align: middle;" />
+                    <div class="text_title" -
+                        style="font-size: 20px;display: inline-block;vertical-align: middle;padding-left: 16px;color: #fff;">
+                        GradConnect
+                    </div>
+                </a>
+                <a href="" style="float: left;height: 100%;" class="hide_above_560">
+                    <div class="vertical_middle"></div>
+                    <img src="images/header logo.svg" alt="alma logo white"
+                        style="max-width:40px;display: inline-block;vertical-align: middle  ;" />
+                    <div class="text_title"
+                        style="display: inline-block;vertical-align: middle;padding-left: 16px;color: #fff;">
+                        GradConnect
+                    </div>
+                </a>
+                <div style="float: right;height: 100%;">
+                    <div class="vertical_middle"></div>
+                    <div style="display:inline-block;vertical-align:middle;">
+                        <div class="hide_below_560">
+                            <div style="padding-right: 40px;display: inline-block;">
+                                <div ng-mouseover="product_dropdown.showDropdown()" style="display: flex;">
+                                    <div class="text_body_light" style="font-size: 16px;cursor: pointer;color: #fff;">
+                                        Explore</div>
                                     <i class="icon-7"
                                         style="font-size: 20px;vertical-align: middle;padding-left: 8px;color: #fff;"></i>
                                 </div>
-                                <div ac-dropdown="dropdown"
-                                    style="position: absolute;right: 16px;top: 42px;width: 200px;margin-top:4px;">
-                                    <a class="dd_item text_body_light"
-                                        href="https://www.almaconnect.com/find-institute">
-                                        Select Network
-                                    </a>
-                                    <a class="dd_item text_body_light" href="/signout">
-                                        Logout
-                                    </a>
+                                <div ac-dropdown="product_dropdown"
+                                    style="width: 270px;position: absolute;top: 30px;right: 0px;">
+                                    <div class="dd_item">
+                                        <a href="/Frontend/news/" class="text_body_light">Prospects & Alumni
+                                            in
+                                            News</a>
+                                    </div>
+                                    <div class="dd_item">
+                                        <a href="https://news.almaconnect.com/data_mine" crossorigin="anonymous"
+                                            class="text_body_light">Essential Alumni and Donor Data</a>
+                                    </div>
+                                    <div class="dd_item">
+                                        <a href="/Frontend/for-institutions/" class="text_body_light">Alumni Network For
+                                            Institutions</a>
+                                    </div>
+
                                 </div>
+                            </div>
+
+                            <a href="/clients" class="text_body_light"
+                                style="font-size: 16px;padding-right: 40px;color: #fff;">Job Opportunities</a>
+                        </div>
+                    </div>
+                    <div style="display: inline-block;vertical-align:middle;">
+                        <div ng-custom-if="!(currentUser.id)">
+                            <a href="/signup" class="ac_button_small hide_below_560">
+                                Login / Signup
+                            </a>
+                            <a href="/signup" class="text_link hide_above_560">
+                                Login / Signup
+                            </a>
+                        </div>
+
+                        <div ng-custom-if="currentUser.id">
+                            <div ng-click="dropdown.showDropdown()" style="cursor: pointer;">
+                                <img ng-src="{{$root.url(currentUser.image, {size: '100x100', type: 'crop'})}}"
+                                    alt="user image"
+                                    style="max-width: 32px;border-radius: 16px;vertical-align: middle;border: 2px solid #fff;" />
+                                <i class="icon-7"
+                                    style="font-size: 20px;vertical-align: middle;padding-left: 8px;color: #fff;"></i>
+                            </div>
+                            <div ac-dropdown="dropdown"
+                                style="position: absolute;right: 16px;top: 42px;width: 200px;margin-top:4px;">
+                                <a class="dd_item text_body_light" href="https://www.almaconnect.com/find-institute">
+                                    Select Network
+                                </a>
+                                <a class="dd_item text_body_light" href="/signout">
+                                    Logout
+                                </a>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+
+        <div style="clear: both;"></div>
+
+        <div class="sections_outer"
+            style="background: linear-gradient(0deg, #2b2b2b, #2b2b2b), linear-gradient(180deg, #E5F4FF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);">
+            <div class="sections">
+                <div class="section1" style="padding: 0px 24px;">
+                    <div class="sections_inner">
+                        <div class="us_header_1">
+                            <div style="max-width: 628px;margin: auto;">
+                                <div class="us_land_text1">
+                                    <div style="color: #fff;">A Success-Oriented and Efficient Engagement Stack for
+                                        <span class="underline--magical">Alumni and Prospects</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="us_header_2">
+                            <div style="max-width: 540px;padding: 12px 0px;margin-left: auto;">
+                                <div class="section1_image" style="text-align: center;width: 86%;">
+                                    <img src="images/collage.svg" alt="Hero image" style="max-width: 100%;" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sections_outer" style="background: #fff;">
+            <div class="sections">
+                <div class="section2 section_padding" style="margin: auto;">
+                    <div class="integrations_title" style="max-width: 940px;margin: auto;padding-bottom: 64px;">
+                        Discover our Features
+                    </div>
+                    <div
+                        style="display: grid;grid-template-columns: repeat(auto-fit, minmax(200px, 280px));grid-gap: 36px;text-align: left;margin: auto; justify-content: center">
+                        <div class="text_body"
+                            style="font-size: 18px;line-height: 27px;color: #282A2C;font-weight: 600;">
+                            <img src="images/gradnews.svg" alt="Ac news image" style="max-width: 100%;">
+                            <div
+                                style="border: 1px solid #E7ECEB;box-sizing: border-box;border-radius: 0px 0px 20px 20px;margin-top: -8px;max-width: 100%;padding: 12px;">
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span style="word-break: break-word;">Receive Daily News <br>Alerts</span>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span style="word-break: break-word;">Comprehensive Alumni Tracking</span>
+                                </div>
+
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span>Verified Results <br>Guarantee</span>
+                                </div>
+
+                                <a href="/Frontend/for-institutions/" class="text_link"
+                                    style="font-size: 20px;font-weight: 600;padding: 48px 12px 24px;display: inline-block;"><span>Learn
+                                        More</span><img
+                                        src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/navigate_next-67001db039592749343f75016b1750dca22b7fdc1770fa46c7454ab6f5daab41.svg"
+                                        alt="navigate next" style="padding: 0px 4px;top: 7px;" /></a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="text_body"
+                            style="font-size: 18px;line-height: 27px;color: #282A2C;font-weight: 600;">
+                            <img src="images/grad_datamine.svg" alt="data mine image" style="max-width: 100%;">
+                            <div
+                                style="border: 1px solid #E7ECEB;box-sizing: border-box;border-radius: 0px 0px 20px 20px;margin-top: -8px;max-width: 100%;padding: 12px;">
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span>Access Updated Alumni Database</span>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span>Receive Weekly Job <br>Updates</span>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span>Ensured Accuracy with Verified Results</span>
+                                </div>
+
+                                <a href="/Frontend/data_mine/" crossorigin="anonymous" class="text_link"
+                                    style="font-size: 20px;font-weight: 600;padding: 48px 12px 24px;display: inline-block;"><span>Learn
+                                        More</span><img
+                                        src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/navigate_next-67001db039592749343f75016b1750dca22b7fdc1770fa46c7454ab6f5daab41.svg"
+                                        alt="navigate next" style="padding: 0px 4px;top: 7px;" /></a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="text_body"
+                            style="font-size: 18px;line-height: 27px;color: #282A2C;font-weight: 600;">
+                            <img src="images/grad_institutions.svg" alt="institution image" style="max-width: 100%;">
+                            <div
+                                style="border: 1px solid #E7ECEB;box-sizing: border-box;border-radius: 0px 0px 20px 20px;margin-top: -8px;max-width: 100%;padding: 12px;">
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span>Foster Alumni <br>Engagement</span>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span>Spread Job Opportunities & Access to Mentorship</span>
+                                </div>
+                                <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
+                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
+                                        alt="pointer image" style="padding: 2px 12px 0px 0px">
+                                    <span>Raise Donations, Create Events, Connect Through Groups</span>
+                                </div>
+                                <a href="/Frontend/news/" class="text_link"
+                                    style="font-size: 20px;font-weight: 600;padding: 21px 12px 24px;display: inline-block;"><span>Learn
+                                        More</span><img
+                                        src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/navigate_next-67001db039592749343f75016b1750dca22b7fdc1770fa46c7454ab6f5daab41.svg"
+                                        alt="Navigate Next" style="padding: 0px 4px;top: 7px;" /></a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="sections_outer" style="background: #F5F5F7;">
+        <div class="sections">
+            <div class="section2 section_padding" style="margin: 0px 24px;">
+                <div class="integrations_title" style="max-width: 1020px;margin: auto;">
+                    We provide tailored support to help our clients achieve success according to their goals and
+                    constraints.
+                </div>
+                <div class="clear"></div>
+                <div class="offer_support">
+
+
+
+
+                    <div class="flex_box" style="flex-direction: row;padding: 36px 0px;">
+                        <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
+                            <div class="vertical_middle"></div>
+                            <div class="block_sec3 block_left" style="max-width: 500px;text-align: left;">
+                                <div class="support_text1">
+                                    <span>
+                                        Online alumni events- End to End
+                                    </span>
+                                </div>
+                                <div class="support_text2">
+                                    We conceptualize and provide support for events like career fairs,
+                                    homecoming, graduation, and more right from promotion to execution.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex2" style="min-width: 180px;-webkit-flex: 1 0 50%;">
+                            <img src="https://i.pinimg.com/564x/8a/03/63/8a036330933645b6231b34f98c42fdab.jpg"
+                                alt="Online Alumni Events" class="support_image">
+                        </div>
+                    </div>
+
+
+                    <div class="flex_box" style="flex-direction: row-reverse;padding: 36px 0px;">
+                        <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
+                            <div class="vertical_middle"></div>
+                            <div class="block_sec3 block_left" style="max-width: 500px;text-align: left;">
+                                <div class="support_text1">
+                                    <span>
+                                        Content Creation- Newsletters, Interviews & Webinars
+                                    </span>
+                                </div>
+                                <div class="support_text2">
+                                    We help you create and share content to boost activity and engagement in
+                                    your network with minimal time commitment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
+                            <img src="https://i.pinimg.com/736x/b4/88/c4/b488c403dc8f64b65165c70538ff3d0f.jpg"
+                                alt="Content Creation" class="support_image">
+                        </div>
+                    </div>
+
+
+                    <div class="clear"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sections_outer" style="background: #fff;">
+
+        <div class="sections_outer" style="background: #F5F5F5;">
+            <div class="sections">
+                <div class="section2 section_padding" style="margin: 0px 24px;">
+                    <div class="secured_system_title">
+                        A secured system, externally as well as internally
+                    </div>
+                    <div class="secured_system_title2">
+                        Our security measures for data privacy and protection
+                    </div>
+                    <div class="clear"></div>
+                    <div
+                        style="display: grid;grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));grid-gap: 80px;text-align: left;margin-top: 64px;">
+                        <div>
+                            <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/secured_system/data_protection-65f7d029547a2064029237cc0754211aee487421610949797c1a71f92f5aefd0.png"
+                                alt="Data Protection" style="max-width: 100%;">
+                            <div style="padding: 24px 0px 12px 0px;" class="text_title">Data Protection</div>
+                            <div class="text_body_big" style="color: #282A2C;">We value your privacy and are
+                                committed to protecting your information. Our platform has been designed and
+                                built using ‘privacy-by-design’ methodologies.</div>
+                        </div>
+                        <div>
+                            <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/secured_system/internal_data_security-844a927759435c3d0abcfaa87f30dedeaa2e77c530bbbc2c865f971dfa758a4f.png"
+                                alt="Internal Data Security" style="max-width: 100%;">
+                            <div style="padding: 24px 0px 12px 0px;" class="text_title">Internal Data Security
+                                Policies</div>
+                            <div class="text_body_big" style="color: #282A2C;">We strictly follow data security
+                                policies and restrict the data access to the admins</div>
+                        </div>
+                        <div>
+                            <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/secured_system/gdpr-2ccd63ea8b2901ae4c327f62e251948cf0d9b25a8aab0578157a6651c7fd0d20.png"
+                                alt="GDPR" style="max-width: 100%;">
+                            <div style="padding: 24px 0px 12px 0px;" class="text_title">GDPR Compliant</div>
+                            <div class="text_body_big" style="color: #282A2C;">We are dedicated to ensuring that
+                                all customer data is treated in accordance with the General Data Protection
+                                Regulation (GDPR).</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_us" style="position: relative;max-width:1280px;min-width:320px;margin:auto;padding:0px 8px;">
+        <div style="border-top: 1px solid #e7eceb;height:1px;"></div>
+        <div style="margin: auto; padding: 48px 0px 12px;position:relative;" class="border-box">
+            <div>
+                <div style="float:left;padding-right:96px;margin-left: 24px;">
+                    <div>
+                        <a href="https://www.gradconnect.com">
+                            <img src="images/footer logo.svg" alt="ac-logo-black"
+                                style="max-height:60px; margin-left: 30px; padding-left: 4;mix-blend-mode: multiply;" />
+                        </a>
+                    </div>
+                </div>
+
+                <div style="float: left;margin: 12px 24px;width: 220px;">
+                    <div style="padding:6px 0px;" class="text_title">Products</div>
+                    <div style="padding:6px 0px;" class="menu_item">
+                        <a class="text_body_light" href="/Frontend/news/">Prospects & Alumni in News</a>
+                    </div>
+                    <div style="padding:6px 0px;" class="menu_item">
+                        <a class="text_body_light" href="">Essential
+                            Alumni and Donor Data</a>
+                    </div>
+                    <div style="padding:6px 0px;" class="menu_item">
+                        <a href="/Frontend/for-institutions/" class="text_body_light">Alumni Network for
+                            Institutions</a>
+                    </div>
+
+                </div>
+
+                <div style="float: left;margin: 12px 24px;width: 120px;">
+                    <div style="padding:6px 0px;" class="text_title">About Us</div>
+
+                    <div style="padding:6px 0px;" class="menu_item">
+                        <a class="text_body_light" href="/contact-us" rel="noopener" target="_blank">Contact
+                            Us</a>
+                    </div>
+                    <div style="padding:6px 0px;" class="menu_item">
+                        <a class="text_body_light" href="/terms-of-use">Terms of Use</a>
+                    </div>
+                    <div style="padding:6px 0px;" class="menu_item">
+                        <a class="text_body_light" href="/privacy-policy">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div style="float: left;margin: 12px 24px;width: 160px;">
+                    <div style="padding:6px 0px;" class="text_title">Address</div>
+                    <div style="padding:6px 0px;padding-bottom: 2px;" class="menu_item">
+                        <div class="text_body_light">
+                            Landran,Sector 112
+                        </div>
+                    </div>
+                    <div style="padding: 2px 0px;" class="menu_item">
+                        <div class="text_body_light">
+                            Mohali,Punjab
+                        </div>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div style="float: left;margin: 12px 24px;width: 160px;">
+                    <div style="padding:6px 0px;" class="text_title">Contact</div>
+                    <div style="padding:6px 0px;padding-bottom: 2px;" class="menu_item">
+                        <div class="text_body_light">Sales:</div>
+                    </div>
+                    <div style="padding: 2px 0px;" class="menu_item">
+                        <div class="text_body_light">www.GradConnect.com</div>
+                    </div>
+                    <div style="padding:2px 0px;" class="menu_item">
+                        <div class="text_body_light">+91 8437104946</div>
+                    </div>
                     <div style="clear: both;"></div>
                 </div>
             </div>
 
             <div style="clear: both;"></div>
 
-            <div class="sections_outer"
-                style="background: linear-gradient(0deg, #4C0EF8, #4C0EF8), linear-gradient(180deg, #E5F4FF 0%, rgba(229, 239, 255, 0.262661) 83.7%, rgba(229, 239, 255, 0) 100%);">
-                <div class="sections">
-                    <div class="section1" style="padding: 0px 24px;">
-                        <div class="sections_inner">
-                            <div class="us_header_1">
-                                <div style="max-width: 628px;margin: auto;">
-                                    <div class="us_land_text1">
-                                        <div style="color: #fff;">Alumni & Prospects Engagement Stack built for <span
-                                                class="underline--magical">Success & Efficiency</span></div>
-                                    </div>
-                                    <div style="margin: 64px 0px;">
-                                        <a href="https://calendly.com/dhruv-almaconnect/demo?month=2021-12"
-                                            class="join_button" crossorigin="anonymous">
-                                            Request a Demo
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+            <div style="border: 1px solid #B6B9BB;margin: 56px auto 12px auto;"></div>
 
-                            <div class="us_header_2">
-                                <div style="max-width: 540px;padding: 12px 0px;margin-left: auto;">
-                                    <div class="section1_image" style="text-align: center;width: 86%;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/Hero_image-41d42f715847251e98bd1f264964058b749c53116ef5eecc29f3cebf3d3f8006.png"
-                                            alt="Hero image" style="max-width: 100%;" />
-                                    </div>
-                                </div>
-                            </div>
+            <div>
 
-                        </div>
-                    </div>
-                </div>
+                <a href="/in" target="_blank" rel="noopener"
+                    style="margin: auto; display: block; width: max-content; color: rgb(182,185,187);font-size: 12px;line-height:20px;text-decoration: none">
+                    © Copyright Gradconnect</a>
             </div>
-
-            <div class="sections_outer" style="background: #fff;">
-                <div class="sections">
-                    <div class="section2 section_padding" style="margin: auto;">
-                        <div class="integrations_title" style="max-width: 940px;margin: auto;padding-bottom: 64px;">
-                            Discover our Products
-                        </div>
-                        <div
-                            style="display: grid;grid-template-columns: repeat(auto-fit, minmax(200px, 280px));grid-gap: 36px;text-align: left;margin: auto; justify-content: center">
-                            <div class="text_body"
-                                style="font-size: 18px;line-height: 27px;color: #282A2C;font-weight: 600;">
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/Ac_News-4e698e68df15b7de008f257c123103ea7c79dac253a5c7a79a114d456e9401cf.png"
-                                    alt="Ac news image" style="max-width: 100%;">
-                                <div
-                                    style="border: 1px solid #E7ECEB;box-sizing: border-box;border-radius: 0px 0px 20px 20px;margin-top: -8px;max-width: 100%;padding: 12px;">
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span style="word-break: break-word;">Receive Daily News <br>Alerts</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span style="word-break: break-word;">Comprehensive Alumni Tracking</span>
-                                    </div>
-
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Verified Results <br>Guarantee</span>
-                                    </div>
-
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Search across 400,000+ Global Sources</span>
-                                    </div>
-                                    <a href="/alumni/news" class="text_link"
-                                        style="font-size: 20px;font-weight: 600;padding: 48px 12px 24px;display: inline-block;"><span>Learn
-                                            More</span><img
-                                            src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/navigate_next-67001db039592749343f75016b1750dca22b7fdc1770fa46c7454ab6f5daab41.svg"
-                                            alt="navigate next" style="padding: 0px 4px;top: 7px;" /></a>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="text_body"
-                                style="font-size: 18px;line-height: 27px;color: #282A2C;font-weight: 600;">
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/Ac_datamine-93320a435f3d635f5209740f18eded4121a89cab57b24dd3fece1a65b32024f2.png"
-                                    alt="data mine image" style="max-width: 100%;">
-                                <div
-                                    style="border: 1px solid #E7ECEB;box-sizing: border-box;border-radius: 0px 0px 20px 20px;margin-top: -8px;max-width: 100%;padding: 12px;">
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Access Updated Alumni Database</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Receive Weekly Job <br>Updates</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Ensured Accuracy with Verified Results</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Advanced Reporting & Filtering capabilities</span>
-                                    </div>
-                                    <a href="https://news.almaconnect.com/data_mine" crossorigin="anonymous"
-                                        class="text_link"
-                                        style="font-size: 20px;font-weight: 600;padding: 48px 12px 24px;display: inline-block;"><span>Learn
-                                            More</span><img
-                                            src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/navigate_next-67001db039592749343f75016b1750dca22b7fdc1770fa46c7454ab6f5daab41.svg"
-                                            alt="navigate next" style="padding: 0px 4px;top: 7px;" /></a>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="text_body"
-                                style="font-size: 18px;line-height: 27px;color: #282A2C;font-weight: 600;">
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/Ac_institution-287ede73ac7b8548b66d1a9da95dd58ff8f3e8a7ebca9f488288a1c3a4504828.png"
-                                    alt="institution image" style="max-width: 100%;">
-                                <div
-                                    style="border: 1px solid #E7ECEB;box-sizing: border-box;border-radius: 0px 0px 20px 20px;margin-top: -8px;max-width: 100%;padding: 12px;">
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Foster Alumni <br>Engagement</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Updated Alumni <br>Directory</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Spread Job Opportunities & Access to Mentorship</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Raise Donations, Create Events, Connect Through Groups</span>
-                                    </div>
-                                    <a href="/for-institutions" class="text_link"
-                                        style="font-size: 20px;font-weight: 600;padding: 21px 12px 24px;display: inline-block;"><span>Learn
-                                            More</span><img
-                                            src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/navigate_next-67001db039592749343f75016b1750dca22b7fdc1770fa46c7454ab6f5daab41.svg"
-                                            alt="Navigate Next" style="padding: 0px 4px;top: 7px;" /></a>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div class="text_body"
-                                style="font-size: 18px;line-height: 27px;color: #282A2C;font-weight: 600;">
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/Ac_corporate-69704ba204a40509b4d3fdb083f35ca9242f6a9c32715bdd4709b96bb4fa6bd3.png"
-                                    alt="ac_corporate" style="max-width: 100%;">
-                                <div
-                                    style="border: 1px solid #E7ECEB;box-sizing: border-box;border-radius: 0px 0px 20px 20px;margin-top: -8px;max-width: 100%;padding: 12px;">
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Stay Connected with <br>Ex-Employees</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Boost Boomerang <br>Hiring</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Spread Brand Awareness & New Initiatives</span>
-                                    </div>
-                                    <div style="display: flex; align-items: flex-start; padding: 12px 0px;">
-                                        <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/pointer-c9cedcfef6fb8f2c607a54dea1901b11cef17b350752dafec02e9190d36bf243.svg"
-                                            alt="pointer image" style="padding: 2px 12px 0px 0px">
-                                        <span>Build Business via Alumni Referrals</span>
-                                    </div>
-                                    <a href="/for-companies" class="text_link"
-                                        style="font-size: 20px;font-weight: 600;padding: 48px 12px 24px;display: inline-block;"><span>Learn
-                                            More</span><img
-                                            src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/products/navigate_next-67001db039592749343f75016b1750dca22b7fdc1770fa46c7454ab6f5daab41.svg"
-                                            alt="navigate_next" style="padding: 0px 4px;top: 7px;" /></a>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sections_outer" style="background: #E5E5E5;">
-                <div class="sections">
-                    <div class="section2 section_padding" style="margin: 0px 24px;">
-                        <div class="inst_trust_title">
-                            Over <span style="font-weight: 800;">500</span> Institutions and Corporates Trust
-                            AlmaConnect
-                        </div>
-                        <div style="max-width: 1152px;justify-content: center;margin: auto;">
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/williamette-845975a34fc428a414349731e85978f5749afc74ae90777475b54fb9739db2f6.png"
-                                    alt="williamette.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/bryant-ef1e8c309f1a5842ce083cf7758cfac99be8db5b2a7754f84e52d1f3db19c6e4.png"
-                                    alt="bryant.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/Syneos_Health_logo-8dc133541eca996f089a90fc121bad4477eca897f808fb455e48582308d6807d.png"
-                                    alt="Syneos_Health_logo.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/Augsburg-d1640f2a3ffee8dbdd6bfb181fb4d2830124e4832a3f5ebc4c93682f76c5fc30.png"
-                                    alt="Augsburg.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/Marquette-12b40d825bc11fa8ae7c2643da18ac2ff8e50af7155f7940ef62b76cd4afc94a.png"
-                                    alt="Marquette.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/ryerson-fb0b74fdefa806d0b78224a4134bfaa63734a1fad8ad295d20db133048b31278.png"
-                                    alt="ryerson.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/IIT_delhi-29249404ce7077ce38b51516506c93ecf8534f2254021dbf962f9c609eeb24a3.png"
-                                    alt="IIT_delhi.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/Bits_pilani-2a6e840c11e1414d2e3ee694372e1d7e4878151a7af1d6a55b42e5fe2ff86844.png"
-                                    alt="Bits_pilani.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/IIM-1131ad44d0f9a7209f9711827036eedf24bbb5a1ee2d833e238e92b6748f5209.png"
-                                    alt="IIM.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/Comviva-3e9fc8d0226d7547fe6172543516cd83c787b6df6105a4ba431d430702b1fd7d.png"
-                                    alt="Comviva.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/IIMU-6678458149ab7518e8b3ed5ab3d2b8a69eb8445f62a7d07609d1748ea1fd5f01.png"
-                                    alt="IIMU.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                            <div class="company_logo">
-                                <div class="vertical_middle"></div>
-                                <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/logos/bryn_mawr-51fc534e4acdd8b1e5e1f0e9122f9c2aaba1fe2ce14c4ff7a6eabb5bdfa506d5.png"
-                                    alt="bryn_mawr.png"
-                                    style="display: inline-block;vertical-align: middle;max-width: 100%;max-height: 100%;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sections_outer" style="background: #F5F5F7;">
-                <div class="sections">
-                    <div class="section2 section_padding" style="margin: 0px 24px;">
-                        <div class="integrations_title" style="max-width: 940px;margin: auto;font-weight: bold;">
-                            AlmaConnect’s Data Science <span style="color: #4C0EF8">Edge</span>.
-                        </div>
-                        <div class="clear"></div>
-                        <div class="offer_support">
-                            <div class="flex_box"
-                                style="flex-direction: row;padding: 36px 24px;background: #fff;margin: 32px 0px;">
-                                <div class="flex2 edge_height" style="min-width: 240px;-webkit-flex: 1 0 44%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="block_sec3 block_right" style="max-width: 520px;text-align: center;">
-                                        <div class="support_text1">
-                                            <span>
-                                                Designations Normalization
-                                            </span>
-                                        </div>
-                                        <div class="support_text2_bold">
-                                            We have normalized 10Mn+ designations and have associated information for
-                                            powerful filtering & targeting
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 44%;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/data_edge/designations-9b11bd94295046a9662801301d5599ca113a54ea443c281ddd4ec06977fb00db.png"
-                                        alt="designations image" class="edge_image">
-                                </div>
-                            </div>
-
-                            <div class="flex_box"
-                                style="flex-direction: row-reverse;padding: 36px 24px;background: #fff;margin: 32px 0px;">
-                                <div class="flex2 edge_height" style="min-width: 240px;-webkit-flex: 1 0 44%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="block_sec3 block_left" style="max-width: 520px;text-align: center;">
-                                        <div class="support_text1">
-                                            <span>
-                                                Aliasing- AKAs
-                                            </span>
-                                        </div>
-                                        <div class="support_text2_bold">
-                                            Same company or school names are commonly mentioned in several different
-                                            ways. We have mapped over 100Mn keywords into parent - child relationships
-                                            to make sure we are able to incorporate all kinds of mentions in user
-                                            profiles.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 44%;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/data_edge/aliasing-d1e327a734b60842b3a5f049aed61b06c9aab6ed75e7beef7d9d16af4b6427ae.png"
-                                        alt="aliasing image" class="edge_image">
-                                </div>
-                            </div>
-
-                            <div class="flex_box"
-                                style="flex-direction: row;padding: 36px 24px;background: #fff;margin: 32px 0px;">
-                                <div class="flex2 edge_height" style="min-width: 240px;-webkit-flex: 1 0 44%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="block_sec3 block_right" style="max-width: 520px;text-align: center;">
-                                        <div class="support_text1">
-                                            <span>
-                                                Company Info
-                                            </span>
-                                        </div>
-                                        <div class="support_text2_bold">
-                                            We track company information to associate further information with user
-                                            profiles. Over 1Mn companies tracked every day.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 44%;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/data_edge/company-08bc090d536b26e4f8b8de5764e3dccaf207327035079226cf031805ec0cd30a.png"
-                                        alt="company image" class="edge_image">
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="active" style="margin-right: 8px;"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active" style="padding: 10%;">
-                        <div style="max-width: 1280px;width: 100%;margin: auto;">
-                            <div class="flex_box" style="flex-direction: row;padding: 24px 0px;">
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 30%;text-align: center;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/testimonials/test2-6e54b8a55de1580fc53c6752b6f5f746ad2108a612ea1f72b7d19b642088ea04.png"
-                                        alt="testimonial 2"
-                                        style="max-width: 240px;max-height: 240px;border-radius: 50%;">
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 70%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="testimonial_block">
-                                        <div class="testimonial_text">
-                                            <span>
-                                                "I am very happy with the service and continue to find prospects that I
-                                                would not have found through other methods!"
-                                            </span>
-                                        </div>
-                                        <div class="testimonial_text2">
-                                            -Nicole Melmed, Bryant University
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item" style="padding: 10%;">
-                        <div style="max-width: 1280px;width: 100%;margin: auto;">
-                            <div class="flex_box" style="flex-direction: row;padding: 24px 0px;">
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 30%;text-align: center;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/testimonials/test3-5243ee5910451782e283d5675b29798bda277c3ab5952fec0f0f8b559f532ed9.png"
-                                        alt="testimonial 3"
-                                        style="max-width: 240px;max-height: 240px;border-radius: 50%;">
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 70%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="testimonial_block">
-                                        <div class="testimonial_text">
-                                            <span>
-                                                "AlmaConnect has enabled us to organise all our alumni events and
-                                                activities efficiently. It has been an absolute pleasure working with
-                                                Almaconnect."
-                                            </span>
-                                        </div>
-                                        <div class="testimonial_text2">
-                                            -Souvik Bhattacharya, BITS Pilani
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-                <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
-            </div>
-
-            <div class="sections_outer" style="background: #F5F5F7;">
-                <div class="sections">
-                    <div class="section2 section_padding" style="margin: 0px 24px;">
-                        <div class="integrations_title" style="max-width: 1020px;margin: auto;">
-                            We offer support to help our clients succeed based on their goals and constraints.
-                        </div>
-                        <div class="clear"></div>
-                        <div class="offer_support">
-
-                            <div class="flex_box" style="flex-direction: row-reverse;padding: 36px 0px;">
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="block_sec3 block_left" style="max-width: 500px;text-align: left;">
-                                        <div class="support_text1">
-                                            <span>
-                                                Data Enrichment- Manually + Automatically
-                                            </span>
-                                        </div>
-                                        <div class="support_text2">
-                                            We sync your alumni profiles with LinkedIn to keep your database updated and
-                                            integrate your alumni’s social activity into your network.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/support_to_clients/data_enrichment-f15d8dc25d53dd3bec9dfdfac00330bca6da505aad095dd7314cea967103ad33.png"
-                                        alt="Data Enrichment" class="support_image">
-                                </div>
-                            </div>
-
-
-                            <div class="flex_box" style="flex-direction: row;padding: 36px 0px;">
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="block_sec3 block_left" style="max-width: 500px;text-align: left;">
-                                        <div class="support_text1">
-                                            <span>
-                                                Online alumni events- End to End
-                                            </span>
-                                        </div>
-                                        <div class="support_text2">
-                                            We conceptualize and provide support for events like career fairs,
-                                            homecoming, graduation, and more right from promotion to execution.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/support_to_clients/online_alumni_events-0e94a0b779f67802e00568587e192b23f162fc7e1ec20e1845b2d6cd8e5dd30b.png"
-                                        alt="Online Alumni Events" class="support_image">
-                                </div>
-                            </div>
-
-
-                            <div class="flex_box" style="flex-direction: row-reverse;padding: 36px 0px;">
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="block_sec3 block_left" style="max-width: 500px;text-align: left;">
-                                        <div class="support_text1">
-                                            <span>
-                                                Content Creation- Newsletters, Interviews & Webinars
-                                            </span>
-                                        </div>
-                                        <div class="support_text2">
-                                            We help you create and share content to boost activity and engagement in
-                                            your network with minimal time commitment.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/support_to_clients/content_creation-ac4b51bf9e1f5f59e60fc01474804c816c9c0c356f097665508e850687a0ab1e.png"
-                                        alt="Content Creation" class="support_image">
-                                </div>
-                            </div>
-
-                            <div class="flex_box" style="flex-direction: row;padding: 36px 0px;">
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <div class="vertical_middle"></div>
-                                    <div class="block_sec3 block_left" style="max-width: 500px;text-align: left;">
-                                        <div class="support_text1">
-                                            <span>
-                                                Dedicated Account Manager for customization and personalisation
-                                            </span>
-                                        </div>
-                                        <div class="support_text2">
-                                            We provide a dedicated account manager to help you customize your network
-                                            and get the most out of our platform.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex2" style="min-width: 240px;-webkit-flex: 1 0 50%;">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/support_to_clients/dedicated_account_manager-e1659a4ef866c194696cc0075e6bf7d217538d242fc2d838055f91e01d80e71c.png"
-                                        alt="dedicated_account_manager" class="support_image">
-                                </div>
-                            </div>
-
-                            <div class="clear"></div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sections_outer" style="background: #fff;">
-                <div class="sections">
-                    <div class="section2 section_padding" style="margin: 0px 24px;">
-                        <div class="integrations_title"
-                            style="max-width: 840px;margin: auto;text-align: center;width: 80%;">
-                            Integrations
-                        </div>
-                        <div class="clear"></div>
-                        <div ng-init="current_integrations = 'ATS'"></div>
-                        <div class="integration_grid">
-                            <div class="integration_grid1">
-                                <div class="integration_title" ng-click="current_integrations = 'ATS'">
-                                    ATS
-                                    <i class="icon-7"
-                                        style="font-size: 20px;vertical-align: middle;padding-left: 8px;float: right;"></i>
-                                </div>
-                                <div ng-custom-if="current_integrations == 'ATS'">
-                                    <div class="integration_desc">Integrate into your ATS to fetch job openings and send
-                                        applications into your system</div>
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/integrations/ATS-ba62831f9beb243381f7f0a5e08e5f648daba17a4b175c424276ab0de6a3faa2.png"
-                                        alt="ATS" style="max-width: 100%;padding-bottom: 12px;" class="hide_above_560">
-                                </div>
-                                <div class="integration_title" ng-click="current_integrations = 'CRM'">
-                                    CRM
-                                    <i class="icon-7"
-                                        style="font-size: 20px;vertical-align: middle;padding-left: 8px;float: right;"></i>
-                                </div>
-                                <div ng-custom-if="current_integrations == 'CRM'">
-                                    <div class="integration_desc">Alumni engagement and profile data is always in sync
-                                        with your CRM</div>
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/integrations/CRM-31c5f05e2dd645185444c3fc2ebd39f0fc617036269b87765eb4125d6f73c0a4.png"
-                                        alt="CRM Integration" style="max-width: 100%;padding-bottom: 12px;"
-                                        class="hide_above_560">
-                                </div>
-                                <div class="integration_title" ng-click="current_integrations = 'Social Media'">
-                                    Social Media
-                                    <i class="icon-7"
-                                        style="font-size: 20px;vertical-align: middle;padding-left: 8px;float: right;"></i>
-                                </div>
-                                <div ng-custom-if="current_integrations =='Social Media'">
-                                    <div class="integration_desc">Deep social media integrations to leverage all social
-                                        network to full potential</div>
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/integrations/social_media-bce86df1a31f8c64e4a26477b327c9eb20e364e6165407d2ee94309b51e4ec9c.png"
-                                        alt="Social Media" style="max-width: 100%;padding-bottom: 12px;"
-                                        class="hide_above_560">
-                                </div>
-                            </div>
-                            <div style="text-align: right;" class="hide_below_560">
-                                <div ng-custom-if="current_integrations == 'ATS'">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/integrations/ATS-ba62831f9beb243381f7f0a5e08e5f648daba17a4b175c424276ab0de6a3faa2.png"
-                                        alt="ATS" style="max-width: 80%;">
-                                </div>
-                                <div ng-custom-if="current_integrations == 'CRM'">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/integrations/CRM-31c5f05e2dd645185444c3fc2ebd39f0fc617036269b87765eb4125d6f73c0a4.png"
-                                        alt="CRM Integration" style="max-width: 80%;">
-                                </div>
-                                <div ng-custom-if="current_integrations == 'Social Media'">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/integrations/social_media-bce86df1a31f8c64e4a26477b327c9eb20e364e6165407d2ee94309b51e4ec9c.png"
-                                        alt="Social Media" style="max-width: 80%;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sections_outer" style="background: #F5F5F5;">
-                    <div class="sections">
-                        <div class="section2 section_padding" style="margin: 0px 24px;">
-                            <div class="secured_system_title">
-                                A secured system, externally as well as internally
-                            </div>
-                            <div class="secured_system_title2">
-                                Our security measures for data privacy and protection
-                            </div>
-                            <div class="clear"></div>
-                            <div
-                                style="display: grid;grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));grid-gap: 80px;text-align: left;margin-top: 64px;">
-                                <div>
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/secured_system/data_protection-65f7d029547a2064029237cc0754211aee487421610949797c1a71f92f5aefd0.png"
-                                        alt="Data Protection" style="max-width: 100%;">
-                                    <div style="padding: 24px 0px 12px 0px;" class="text_title">Data Protection</div>
-                                    <div class="text_body_big" style="color: #282A2C;">We value your privacy and are
-                                        committed to protecting your information. Our platform has been designed and
-                                        built using ‘privacy-by-design’ methodologies.</div>
-                                </div>
-                                <div>
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/secured_system/internal_data_security-844a927759435c3d0abcfaa87f30dedeaa2e77c530bbbc2c865f971dfa758a4f.png"
-                                        alt="Internal Data Security" style="max-width: 100%;">
-                                    <div style="padding: 24px 0px 12px 0px;" class="text_title">Internal Data Security
-                                        Policies</div>
-                                    <div class="text_body_big" style="color: #282A2C;">We strictly follow data security
-                                        policies and restrict the data access to the admins</div>
-                                </div>
-                                <div>
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/secured_system/gdpr-2ccd63ea8b2901ae4c327f62e251948cf0d9b25a8aab0578157a6651c7fd0d20.png"
-                                        alt="GDPR" style="max-width: 100%;">
-                                    <div style="padding: 24px 0px 12px 0px;" class="text_title">GDPR Compliant</div>
-                                    <div class="text_body_big" style="color: #282A2C;">We are dedicated to ensuring that
-                                        all customer data is treated in accordance with the General Data Protection
-                                        Regulation (GDPR).</div>
-                                </div>
-                                <div>
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/us_landing/secured_system/distributed_servers-e460850827599d294197ccd6e681c53cfebb468a493f4224deea221dc7adf531.png"
-                                        alt="Distributed Servers" style="max-width: 100%;">
-                                    <div style="padding: 24px 0px 12px 0px;" class="text_title">Distributed servers
-                                        across US & Europe</div>
-                                    <div class="text_body_big" style="color: #282A2C;">We partnered with AWS for its
-                                        hosting and data services allowing users to access our platform 24x7.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sections_outer" style="background: #4C0EF8;">
-                <div class="sections">
-                    <div class="section2 schedule_call">
-                        <div>
-                            <div class="schedule_call_text">
-                                Get a Quick Demo
-                            </div>
-                            <div class="schedule_call_text2">
-                                Let us help you build your Alumni Community
-                            </div>
-                        </div>
-                        <div>
-                            <a href="https://calendly.com/almaconnect-news-scanner/custom-demo"
-                                class="schedule_call_button" crossorigin="anonymous">
-                                Request a Demo</a>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer_us"
-                style="position: relative;max-width:1280px;min-width:320px;margin:auto;padding:0px 8px;">
-                <div style="border-top: 1px solid #e7eceb;height:1px;"></div>
-                <div style="margin: auto; padding: 48px 0px 12px;position:relative;" class="border-box">
-                    <div>
-                        <div style="float:left;padding-right:96px;margin-left: 24px;">
-                            <div>
-                                <a href="https://www.almaconnect.com">
-                                    <img src="https://d26pkxyw9vw39t.cloudfront.net/assets/website/ac-logo-black-ff214d68ff954f7d856ae7acb655e73740acf3e494dcf47a8b29c1fbcd62aca9.png"
-                                        alt="ac-logo-black" style="max-height:88px;" />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div style="float: left;margin: 12px 24px;width: 220px;">
-                            <div style="padding:6px 0px;" class="text_title">Products</div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a class="text_body_light" href="/alumni/news">Prospects & Alumni in News</a>
-                            </div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a class="text_body_light" href="https://news.almaconnect.com/data_mine">Essential
-                                    Alumni and Donor Data</a>
-                            </div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a href="/for-institutions" class="text_body_light">Alumni Network for Institutions</a>
-                            </div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a class="text_body_light" href="/for-companies">Alumni Network for Corporates</a>
-                            </div>
-                        </div>
-
-                        <div style="float: left;margin: 12px 24px;width: 120px;">
-                            <div style="padding:6px 0px;" class="text_title">About Us</div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a class="text_body_light" href="/clients" rel="noopener" target="_blank">Clients</a>
-                            </div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a class="text_body_light" href="/contact-us" rel="noopener" target="_blank">Contact
-                                    Us</a>
-                            </div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a class="text_body_light" href="/terms-of-use">Terms of Use</a>
-                            </div>
-                            <div style="padding:6px 0px;" class="menu_item">
-                                <a class="text_body_light" href="/privacy-policy">Privacy Policy</a>
-                            </div>
-                        </div>
-
-                        <div style="float: left;margin: 12px 24px;width: 160px;">
-                            <div style="padding:6px 0px;" class="text_title">Address</div>
-                            <div style="padding:6px 0px;padding-bottom: 2px;" class="menu_item">
-                                <div class="text_body_light">
-                                    3411 Silverside Road,
-                                </div>
-                            </div>
-                            <div style="padding: 2px 0px;" class="menu_item">
-                                <div class="text_body_light">
-                                    Wilmington, DE 19810
-                                </div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-
-                        <div style="float: left;margin: 12px 24px;width: 160px;">
-                            <div style="padding:6px 0px;" class="text_title">Contact</div>
-                            <div style="padding:6px 0px;padding-bottom: 2px;" class="menu_item">
-                                <div class="text_body_light">Sales:</div>
-                            </div>
-                            <div style="padding: 2px 0px;" class="menu_item">
-                                <div class="text_body_light">global.sales@almaconnect.com</div>
-                            </div>
-                            <div style="padding:2px 0px;" class="menu_item">
-                                <div class="text_body_light">+1 (650) 668-5781</div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                    </div>
-
-                    <div style="clear: both;"></div>
-
-                    <div style="border: 1px solid #B6B9BB;margin: 56px auto 12px auto;"></div>
-
-                    <div>
-                        <div
-                            style="margin: auto;text-align: center;color: rgb(182,185,187);font-size: 12px;line-height:20px;">
-                            &copy; Copyright Alma Labs since 2021
-                        </div>
-                        <a href="/in" target="_blank" rel="noopener"
-                            style="margin: auto; display: block; width: max-content; color: rgb(182,185,187);font-size: 12px;line-height:20px;text-decoration: none">AlmaConnect</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-
+            <div class="clear"></div>
         </div>
     </div>
 
+</div>
+</div>
 
-    <script type="text/javascript">
-        head.js('https://d26pkxyw9vw39t.cloudfront.net/assets/plugins/ac-plugins-73084db5e9e6a056c53d7b3826fbed52d1f79558c124c09ac84634da26122fbe.js',
-            '//connect.facebook.net/en_US/sdk.js',
-            'https://d26pkxyw9vw39t.cloudfront.net/assets/ac_common/ac_common-e4dfa456f3d261bceb09e961be73a7101791c34f318eb53540eb11371f01853a.js',
-            'https://d26pkxyw9vw39t.cloudfront.net/assets/ac_website/ac_website-7a4708159564f77ad9108034b2ad432c7ccc42a8790d7dcc919d98d90d3ef1f0.js');
-    </script>
+
+<script type="text/javascript">
+    head.js('https://d26pkxyw9vw39t.cloudfront.net/assets/plugins/ac-plugins-73084db5e9e6a056c53d7b3826fbed52d1f79558c124c09ac84634da26122fbe.js',
+        '//connect.facebook.net/en_US/sdk.js',
+        'https://d26pkxyw9vw39t.cloudfront.net/assets/ac_common/ac_common-e4dfa456f3d261bceb09e961be73a7101791c34f318eb53540eb11371f01853a.js',
+        'https://d26pkxyw9vw39t.cloudfront.net/assets/ac_website/ac_website-7a4708159564f77ad9108034b2ad432c7ccc42a8790d7dcc919d98d90d3ef1f0.js');
+</script>
 
 
 </body>
