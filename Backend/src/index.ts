@@ -2,13 +2,15 @@ import express, { Request, Response } from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import connect from "./DBconn.ts"
+import UserRouter from './routes/user.ts'
 const app = express();
 
 connect();
 
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+app.use('/user', UserRouter);
 
 app.get("/", (_req: Request, res: Response) => {
   res.status(400).json({
