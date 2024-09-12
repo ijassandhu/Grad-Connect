@@ -4,64 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Sign-Up Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="form-container">
-            <h2 id="form-title">Create an Account</h2>
-            <form id="user-form">
-                <div class="input-field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="input-field">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" required>
-                </div>
-                <button type="submit" class="btn">Sign Up</button>
-                <p class="toggle-message">Already have an account? <span id="toggle-form">Log In</span></p>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        const formTitle = document.getElementById('form-title');
-        const userForm = document.getElementById('user-form');
-        const toggleForm = document.getElementById('toggle-form');
-        const submitButton = document.querySelector('.btn');
-        let isLoginForm = false;
-
-        toggleForm.addEventListener('click', () => {
-            if (isLoginForm) {
-                formTitle.textContent = 'Create an Account';
-                submitButton.textContent = 'Sign Up';
-                toggleForm.textContent = 'Log In';
-                document.querySelector('.toggle-message').innerHTML = 'Already have an account? <span id="toggle-form">Log In</span>';
-            } else {
-                formTitle.textContent = 'Login to Your Account';
-                submitButton.textContent = 'Log In';
-                toggleForm.textContent = 'Sign Up';
-                document.querySelector('.toggle-message').innerHTML = 'Don\'t have an account? <span id="toggle-form">Sign Up</span>';
-            }
-            isLoginForm = !isLoginForm;
-        });
-
-        userForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-
-            if (isLoginForm) {
-                alert(`Logging in with\nEmail: ${email}\nPassword: ${password}`);
-            } else {
-                alert(`Account Created!\nEmail: ${email}`);
-            }
-        });
-
-    </script>
+    <title>GradConnect</title>
     <style>
         * {
             margin: 0;
@@ -82,13 +25,11 @@
             background-color: #2b2b2b;
             color: #fff;
             padding: 40px;
-            /* Increase padding for a larger form */
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 400px;
             min-height: 500px;
-            /* Increase the minimum height */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -112,20 +53,17 @@
         .input-field input {
             width: 100%;
             padding: 15px;
-            /* Increase padding for larger input fields */
             border: 2px solid #00C4B5;
             border-radius: 5px;
             background-color: #fff;
             color: #2b2b2b;
             font-size: 16px;
-            /* Increase input text size */
         }
 
         .btn {
             background-color: #00C4B5;
             color: #fff;
             padding: 15px;
-            /* Increase button size */
             border: none;
             width: 100%;
             border-radius: 5px;
@@ -140,7 +78,6 @@
         .toggle-message {
             text-align: center;
             margin-top: 20px;
-            /* Increase margin for better spacing */
         }
 
         .toggle-message span {
@@ -151,24 +88,61 @@
         @media (max-width: 500px) {
             .container {
                 padding: 30px;
-                /* Adjust padding for smaller screens */
                 max-width: 90%;
                 min-height: 450px;
-                /* Adjust height for small screens */
             }
 
             .input-field input {
                 padding: 12px;
-                /* Adjust input padding on smaller screens */
                 font-size: 14px;
             }
 
             .btn {
                 padding: 12px;
-                /* Adjust button size for smaller screens */
             }
         }
     </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2 id="form-title">Create an Account</h2>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button class="btn" id="form-button">Sign Up</button>
+            <div class="toggle-message">
+                Already have an account? <span id="toggle-form">Login</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const formTitle = document.getElementById('form-title');
+        const formButton = document.getElementById('form-button');
+        const toggleForm = document.getElementById('toggle-form');
+        const isLogin = false;
+
+        toggleForm.addEventListener('click', () => {
+            if (formTitle.innerText === 'Create an Account') {
+                formTitle.innerText = 'Login to Your Account';
+                formButton.innerText = 'Login';
+                toggleForm.innerText = 'Create an Account';
+            } else {
+                formTitle.innerText = 'Create an Account';
+                formButton.innerText = 'Sign Up';
+                toggleForm.innerText = 'Login';
+            }
+        });
+    </script>
+
 </body>
 
 </html>
