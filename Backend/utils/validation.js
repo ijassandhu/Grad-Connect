@@ -1,6 +1,6 @@
-import { body } from "express-validator";
+import { body, param } from "express-validator";
 
-export const validateString = (field: string, optional: Boolean = true) => {
+export const validateString = (field, optional= true) => {
   return optional
     ? body(field)
         .trim()
@@ -36,3 +36,5 @@ export const validatePassword = body("password")
     minNumbers: 1,
   })
   .withMessage("Weak Password");
+
+export const validateId = param('id').isJWT().withMessage('Invalid Token')

@@ -17,6 +17,7 @@ const schema = new Schema({
   },
   profilePic: String,
   location: String,
+  about: String,
 
   posts: [
     {
