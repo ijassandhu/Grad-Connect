@@ -1,32 +1,24 @@
 export default class customError extends Error {
-  status;
-  constructor(message, status) {
+  constructor(message, status, data = undefined) {
     super(message);
     this.status = status;
+    this.data = data;
   }
 }
 
-export const successfulResponse = (
-  res,
-  statusCode,
-  message,
-  data,
-) => {
+export const successfulResponse = (res, statusCode, message, data) => {
   res.status(statusCode).json({ success: true, message, data });
 };
 
-export const errorResponse = (
-  res,
-  error,
-  status,
-) => {
+export const errorResponse = (res, error, status) => {
   console.log(error);
   console.log("\n-----------------------------------------------------\n");
-  if (error.name === 'jsonwebtokenerror' ) status = 400;
+  if (error.name === "jsonwebtokenerror") status = 400;
   res.status(status || 500).json({
     success: false,
-    message:error.message || "INTERNAL SERVER ERROR",
-    name:error.name || "server",
+    message: error.message || "INTERNAL SERVER ERROR",
+    name: error.name || "server",
+    data: error.data,
   });
 };
 
