@@ -3,7 +3,8 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import connect from "./DBconn.js";
 import UserRouter from "./routes/user.js";
-import eduInstitutionRouter from './routes/educationalIntitution.js'
+import eduInstitutionRouter from "./routes/educationalIntitutions.js";
+import postRouter from "./routes/posts.js";
 const app = express();
 
 connect();
@@ -12,7 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use("/user", UserRouter);
-app.use('/eduInstitution', eduInstitutionRouter)
+app.use("/post", postRouter);
+app.use("/eduInstitution", eduInstitutionRouter);
 
 app.get("/", (_req, res) => {
   res.status(400).json({
