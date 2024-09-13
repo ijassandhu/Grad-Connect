@@ -1,22 +1,22 @@
 import { body, param } from "express-validator";
 
-export const validateString = (field, optional= true) => {
+export const validateString = (field, optional = true) => {
   return optional
     ? body(field)
-        .trim()
-        .escape()
-        .isString()
-        .withMessage("Not a String")
-        .notEmpty()
-        .withMessage("Empty String")
-        .optional()
+      .trim()
+      .escape()
+      .isString()
+      .withMessage("Not a String")
+      .notEmpty()
+      .withMessage("Empty String")
+      .optional()
     : body(field)
-        .trim()
-        .escape()
-        .notEmpty()
-        .withMessage("Empty String")
-        .isString()
-        .withMessage("Not a String");
+      .trim()
+      .escape()
+      .notEmpty()
+      .withMessage("Empty String")
+      .isString()
+      .withMessage("Not a String");
 };
 
 export const validateEmail = body("email")
@@ -37,4 +37,17 @@ export const validatePassword = body("password")
   })
   .withMessage("Weak Password");
 
-export const validateId = param('id').isJWT().withMessage('Invalid Token')
+export const validateId = param("id").isJWT().withMessage("Invalid Token");
+
+export const validateArray = (field) =>
+  body(field).isArray().withMessage("Not an Array");
+
+export const validateIdinArray = (field) =>
+  body(field).isJWT().withMessage("Invalid Token");
+
+export const validateViewableBy = body("viewableBy")
+  .isInt({
+    min: 1,
+    max: 3,
+  })
+  .optional();
