@@ -40,3 +40,16 @@ export const eduInstitutionFilter = (eduInstitution) => {
   });
   return eduInstitution;
 };
+
+export const postFilter = (post) => {
+  delete post.__v;
+  post._id = jwt.sign({ _id: post._id }, process.env.authSecret);
+  post.comments.forEach((comment) => {
+    comment.userId = jwt.sign({ _id: comment.userd }, process.env.viewSecret);
+  });
+  post.referenceId = jwt.sign(
+    { _id: post.referenceId },
+    process.env.viewSecret,
+  );
+  return post;
+};
