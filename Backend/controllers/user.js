@@ -94,6 +94,17 @@ export const updateUser = async (req, res) => {
   }
 };
 
+export const getUserView = async (_req, res) => {
+  let users = (await User.find().lean()).map((user) => {
+    user._id = jwt.sign({ _id: user._id }, process.env.viewSecret);
+    return user;
+  });
+  res.status(200).json({
+    success: true,
+    data: users,
+  });
+};
+
 //post
 //add experience
 //add education institution
