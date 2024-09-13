@@ -6,6 +6,7 @@ import {
 } from "../utils/validation.js";
 import {
   getUserAuth,
+  getUserView,
   loginUser,
   RegisterUser,
   updateUser,
@@ -13,19 +14,19 @@ import {
 import express from "express";
 const Router = express.Router();
 
-Router.route("/")
-  .post(
-    [
-      validateEmail,
-      validateString("name", false).isLength({ min: 3, max: 30 }),
-      validatePassword,
-      validateString("location"),
-      validateString("profilePic"),
-      validateString("about"),
-    ],
-    RegisterUser,
-  )
-  .get([validateEmail, validatePassword], loginUser);
+Router.post(
+  "/",
+  [
+    validateEmail,
+    validateString("name", false).isLength({ min: 3, max: 30 }),
+    validatePassword,
+    validateString("location"),
+    validateString("profilePic"),
+    validateString("about"),
+  ],
+  RegisterUser,
+);
+Router.post("/login", [validateEmail, validatePassword], loginUser);
 Router.route("/:id")
   .get(validateId, getUserAuth)
   .put(
@@ -37,5 +38,6 @@ Router.route("/:id")
     ],
     updateUser,
   );
+Router.post("/test", getUserView);
 
 export default Router;
