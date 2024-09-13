@@ -1,34 +1,57 @@
 import express from "express";
 import {
+  validateArray,
   validateEmail,
   validateId,
+  validateIdinArray,
   validatePassword,
   validateString,
 } from "../utils/validation.js";
-import { loginEduInstitution, registerEduInstitution } from "../controllers/educationalIntitutions.js";
+import {
+  addAlumnis,
+  addStudents,
+  getEduInstitutionAuth,
+  loginEduInstitution,
+  registerEduInstitution,
+  updateEduInstitution,
+} from "../controllers/educationalIntitutions.js";
 const Router = express.Router();
 
-Router.route("/")
-  .post(
+Router.post(
+  "/",
+  [
+    validateString("name", false),
+    validateEmail,
+    validatePassword,
+    validateString("location"),
+    validateString("ProfilePic"),
+    validateString("about"),
+  ],
+  registerEduInstitution,
+);
+Router.post("/login", [validateEmail, validatePassword], loginEduInstitution);
+
+Router.route("/:id")
+  .get(validateId, getEduInstitutionAuth)
+  .put(
     [
-      validateString("name", false),
-      validateEmail,
-      validatePassword,
+      validateId,
       validateString("location"),
       validateString("ProfilePic"),
       validateString("about"),
     ],
-    registerEduInstitution,
-  )
-  .get([validateEmail, validatePassword], loginEduInstitution);
-
-// Router.route("/:id").get(validateId, getEduInstitutionAuth).put([
-//       validateString("location"),
-//       validateString("ProfilePic"),
-//       validateString("about"),
-// ]);
+    updateEduInstitution,
+  );
+//
+//add student
+Router.route("/student/:id").post(
+  [validateId, validateArray("students"), validateIdinArray("student.*")],
+  addStudents,
+);
+//add alumni
+Router.route("/alumni/:id").post(
+  [validateId, validateArray("alumnis"), validateIdinArray("aluminis.*")],
+  addAlumnis,
+);
 
 export default Router;
-
-//add student
-//add alumni
